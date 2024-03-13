@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="portfolio.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">
+      Ivan
+    </a>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <i class='bx bx-menu' id="menu-icon"></i>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home-text">
+      <h5>Hello, I'm Ivan,</h5>
+      <h1>Python <br>Developer</h1>
+
+      <div class="social">
+        <p>Follow Me on</p>
+        <a href="https://github.com/IvanAkperov?tab=repositories" class="social-link" target="_blank"><i class="ri-github-line"></i></a>
+        <a href="https://vk.com/vanessuela" class="social-link" target="_blank"><i class="ri-vk-line"></i></a>
+        <a href="https://www.youtube.com/channel/UCfJbUZuwIrGsLgkOehnCJvQ" class="social-link" target="_blank"><i class="ri-youtube-line"></i></a>
+      </div>
+
+      <div class="button-follow">
+        <a href="#" class="mail-me"><i class="ri-mail-line"></i><span style="margin-left: 5px;">Mail me</span></a>
+        <a href="#" class="download-btn"><i class="ri-arrow-down-line"></i>Download</a>
+      </div>
+    </div>
+
+    <div class="home-img">
+      <img src="static/images/tg_img.jpg" alt="" height="612px" width="600px">
+    </div>
+  </section>
+
+  <section class="about wow animate__animated animate__fadeInLeft" id="about" style="margin-top: 50px;">
+    <h2>about</h2>
+    <div class="about-text">
+      <h5>I'm 21 years old and have been programming for over 2 years. I develop telegram bots, websites, parsers.
+      <p>Programming for me is not just a hobby or passion, it is my passion. I try to look for new ways to improve my skills and solutions, whether through literature or videos.
+        <p class="stack-tech" style="display: flex; align-items: center; justify-content: center; margin-top: 30px; border-bottom: 2px solid blue;">Here's my stack: </p>
+      </p>
+      </h5>
+    </div>
+  </section>
+
+  <section class="stack wow animate__animated animate__fadeIn" id="work">
+    <div class="skill">
+      <div class="skill-name">Python</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="80%" style="max-width: 80%;"></div>
+      </div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Flask</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+      </div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">Postgresql</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="60%" style="max-width: 60%;"></div>
+      </div>
+      </div>
+    </div>    
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="80%" style="max-width: 80%;"></div>
+      </div>
+      </div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-bar">
+        <div class="skill-per" per="70%" style="max-width: 70%;"></div>
+      </div>
+      </div>
+    </div>
+    <p style="margin-top: 50px;">My skills</p>
+    <div class="line"></div>
+    <div class="skill-hours">
+      <div class="box">
+        <h3>Frontend</h3>
+        <a href="" style="font-size: 16.5px;">40+ Hourse Experience</a>
+      </div>
+      <div class="box">
+        <h3>Backend</h3>
+        <a href="">2 Years Experience</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contact">
+    <h2>Contact me</h2>
+    <div class="contact-me">
+      <form action="">
+        <textarea type="email" placeholder="Email" class="email-field" style="margin-bottom: 30px; margin-top: 50px; width: 450px; height: 50px;"></textarea>
+      </form>
+    </div>
+    <div class="contact-me">
+      <form action="">
+        <textarea type="text" placeholder="Your message" class="message-field" style="width: 450px; height: 150px;"></textarea>
+      </form>
+    </div>
+    <button type="submit" class="btn">Send message</button>
+  </section>
+  <script src="wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>
